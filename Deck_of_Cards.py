@@ -27,7 +27,7 @@ def deck_of_card():
             card = f"{rank} of {suit}"
             deck.append(card)
     random.shuffle(deck)  # Shuffle the deck
-    return deck, suits, ranks
+    return deck, suits, ranks 
 
 def main():
     deck, suits, ranks = deck_of_card()
