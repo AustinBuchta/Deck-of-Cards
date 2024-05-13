@@ -15,9 +15,7 @@ def number_of_card():
 
 def deck_of_card():
     print("Card Dealer")
-    print()
-    print("I have shuffled a deck of 52 cards.")
-    print()
+    print("\nI have shuffled a deck of 52 cards.\n")
     # Populate the deck with cards
     suits = ['Hearts', 'Diamonds', 'Clubs', 'Spades']
     ranks = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'Jack', 'Queen', 'King', 'Ace']
@@ -34,15 +32,13 @@ def main():
     num_cards = number_of_card()
 
     # Display the selected number of cards
-    print()
-    print("Here are your cards:")
+    print("\nHere are your cards:")
     for i in range(num_cards):
         print(deck[i])
         
     # Calculate and display the number of remaining cards
     remaining_cards = len(deck) - num_cards
     print("\nRemaining cards in the deck:", remaining_cards)
-    print()
-    print("Good luck!")
+    print("\nGood luck!")
 if __name__ == "__main__":
     main()
